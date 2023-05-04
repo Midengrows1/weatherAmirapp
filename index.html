@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,600;0,700;1,200;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="./index.js" defer></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <section class="weather_app">
+        <main class="weather__main">
+          <aside class="weather__aside">
+            <div class="first_aside-section">
+              <div class="header__logo">
+                <a href="#">
+                  <img src="./assets/weather.png" alt="" />
+                </a>
+              </div>
+              <form action="#" name="citySearch" class="search__form">
+                <div class="search__container">
+                  <i class="fa-solid fa-magnifying-glass searchloop"></i>
+                  <input
+                    type="text"
+                    class="city-find"
+                    placeholder="Поиск города"
+                  />
+                </div>
+              </form>
+              <h3 class="current__city">Samarkand</h3>
+            </div>
+            <div class="under"></div>
+            <div class="second_aside-section">
+              <nav class="forecast_navbar">
+                <ul class="forecast__container">
+                  <li class="forecast__link"><a href="#">Today</a></li>
+                  <li class="forecast__link"><a href="#">Daily</a></li>
+                </ul>
+              </nav>
+              <h3 class="county">Uzbekistan</h3>
+            </div>
+            <div class="under"></div>
+            <div class="third-aside-section">
+              <ul class="cities__container">
+                <li class="cities"><a href="#">Ташкент</a></li>
+                <li class="cities"><a href="#">Андижан</a></li>
+                <li class="cities"><a href="#">Бухара</a></li>
+                <li class="cities"><a href="#">Гулистан</a></li>
+                <li class="cities"><a href="#">Джизак</a></li>
+                <li class="cities"><a href="#">Зарафшан</a></li>
+                <li class="cities"><a href="#">Карши</a></li>
+                <li class="cities"><a href="#">Навои</a></li>
+                <li class="cities"><a href="#">Наманган</a></li>
+                <li class="cities"><a href="#">Нукус</a></li>
+                <li class="cities"><a href="#">Самарканд</a></li>
+                <li class="cities"><a href="#">Термез</a></li>
+                <li class="cities"><a href="#">Ургенч</a></li>
+                <li class="cities"><a href="#">Фергана</a></li>
+                <li class="cities"><a href="#">Хива</a></li>
+              </ul>
+            </div>
+          </aside>
+          <section class="weather__screen">
+            <div class="weather__banner">
+              <div class="weather__left">
+                <h3>JUN 22</h3>
+                <p>Wed,<span>16:40 pm</span></p>
+              </div>
+              <div class="weather__right">
+                <h1>34&deg</h2>
+                <p>Mostly sunny</p>
+              </div>
+              <div class="bcg-dark"></div>
+            </div>
+            <div class="weather__indicators">
+              <div class="indicators__item"></div>
+              <div class="indicators__item"></div>
+              <div class="indicators__item"></div>
+              <div class="indicators__item"></div>
+              <div class="indicators__item"></div>
+              <div class="indicators__item"></div>
+            </div>
+          </section>
+        </main>
+      </section>
+      <section class="footer__container">
+        <footer class="footer"></footer>
+      </section>
+    </div>
+  </body>
+</html>

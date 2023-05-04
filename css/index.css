@@ -1,0 +1,215 @@
+@import url(./core.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  font-family: var(--fontFamily);
+  font-size: 40px;
+  background-color: var(--bcgred);
+  background: var(--bcg-gradient);
+  background-color: var(--bcgcolor);
+  height: 100vh;
+}
+.wrapper ::selection {
+  color: #fff;
+  background: #3a36f7;
+}
+.weather__main {
+  width: 100%;
+  display: flex;
+  height: 100vh;
+}
+.weather__screen {
+  flex: 1 1 auto;
+}
+.weather__aside {
+  flex: 0 1 15%;
+  /* From https://css.glass */
+  background: rgba(40, 103, 214, 0.46);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border: 1px solid rgba(40, 103, 214, 0.26);
+}
+.weather__aside a {
+  color: #fff;
+}
+.weather__aside > * {
+  padding: 10px 10px 0px 25px;
+}
+.first_aside-section {
+  padding-left: 15px;
+}
+.header__logo {
+  display: flex;
+  height: 100px;
+  margin-bottom: 2vw;
+}
+.header__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-blend-mode: screen;
+}
+.search__form {
+  min-height: 50px;
+  height: 6vw;
+  position: relative;
+}
+.search__container {
+  background: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: var(--borderrad);
+  overflow: hidden;
+  padding: 0 10px;
+  border: 2px solid #fff;
+  opacity: 0.7;
+}
+.city-find {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  font-size: 15px;
+  outline: transparent;
+  border: none;
+}
+.city-find::placeholder {
+  color: var(--text-simple-color);
+  font-weight: 700;
+}
+.searchloop {
+  font-size: 24px;
+  color: var(--text-simple-color);
+}
+.current__city {
+  font-size: 30px;
+  color: var(--text-h3-color);
+  padding-left: 10px;
+  transition: all 0.3s linear;
+}
+
+.under {
+  height: 2px;
+  padding: 0;
+  background-color: #19186b;
+  opacity: 0.3;
+}
+.forecast__container > * {
+  cursor: pointer;
+}
+.forecast__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.forecast_navbar {
+  margin-bottom: 40px;
+}
+.second_aside-section {
+  padding: 0px;
+}
+.forecast__link:hover {
+  background: var(--text-hover);
+}
+.forecast__link {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+}
+.forecast__link a {
+  padding-left: 27px;
+  font-weight: 400;
+  font-size: 20px;
+}
+.county {
+  font-size: var(--fontSize);
+  color: var(--text-h3-color);
+  padding-left: 25px;
+}
+.third-aside-section {
+  padding-left: 25px;
+}
+.cities__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.cities__container > * {
+  font-size: 15px;
+  color: var(--text-simple-color);
+}
+
+.weather__screen {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px 0px 30px;
+}
+.weather__banner {
+  min-height: 500px;
+  background-image: url(/assets/waranont-joe-7K78zXYNFoM-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--borderrad);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px 40px;
+  color: #fff;
+  border: transparent;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s linear;
+}
+.weather__banner > * {
+  position: relative;
+  z-index: 200;
+}
+.bcg-dark {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 212, 255, 0) 70%
+  );
+  transition: all 0.3s linear;
+  z-index: 10;
+}
+.weather__right h1 {
+  font-size: 7vw;
+}
+.weather__right h1 ~ p {
+  font-size: 30px;
+}
+.weather__left h3 {
+  font-size: 4vw;
+}
+.weather__indicators {
+  flex: 1 1 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 180px);
+  gap: 15px;
+  justify-content: center;
+  align-content: center;
+}
+.weather__indicators > * {
+  border-radius: var(--borderrad);
+  background-color: blueviolet;
+  background: rgba(40, 103, 214, 0.46);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border: 1px solid rgba(40, 103, 214, 0.26);
+}
