@@ -213,3 +213,19 @@
   -webkit-backdrop-filter: blur(0px);
   border: 1px solid rgba(40, 103, 214, 0.26);
 }
+
+.indicators__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  color:#fff
+}
+.weather__icon{
+  font-size: 5vw
+}
+.weather__img{
+  width: 5vw;
+  color:#fff;
+}
