@@ -77,14 +77,26 @@
   font-size: 15px;
   outline: transparent;
   border: none;
+  background: #fff;
 }
 .city-find::placeholder {
   color: var(--text-simple-color);
   font-weight: 700;
+  background: #fff;
 }
 .searchloop {
   font-size: 24px;
   color: var(--text-simple-color);
+  transition: color 0.3s ease-in-out;
+}
+.searchloop:hover {
+  transition: color 0.3s ease-in-out;
+  color: #7052f5;
+}
+.btn_search {
+  border: transparent;
+  background: transparent;
+  cursor: pointer;
 }
 .current__city {
   font-size: 30px;
@@ -215,17 +227,29 @@
 }
 
 .indicators__item {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  color:#fff
+  justify-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  color: #fff;
 }
-.weather__icon{
-  font-size: 5vw
+.indicator__description p ~ h3 {
+  font-size: 2.2vw;
 }
-.weather__img{
+.indicator__description p {
+  font-size: 1.9vw;
+}
+.weather__icon {
+  font-size: 5vw;
+}
+.weather__img {
   width: 5vw;
-  color:#fff;
+  color: #fff;
+}
+.weather_svg {
+  width: 7vw;
+  height: auto;
 }
