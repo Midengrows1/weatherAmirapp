@@ -18,7 +18,7 @@ const inpChange = async (e) => {
   console.log(historyData);
   let sr = new Date(currentData.sys.sunrise * 1000).toLocaleTimeString();
   let ss = new Date(currentData.sys.sunset * 1000).toLocaleTimeString();
-  
+
   console.log(sr, ss);
   const filteredHistory = historyData.list.filter(
     (i) => i.dt_txt.slice(11, 13) === "06" && i
