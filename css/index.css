@@ -134,6 +134,8 @@
   padding: 15px 0;
 }
 .forecast__link a {
+  width: 100%;
+  display: inline-block;
   padding-left: 27px;
   font-weight: 400;
   font-size: 20px;
@@ -201,10 +203,13 @@
   font-size: 7vw;
 }
 .weather__right h1 ~ p {
-  font-size: 30px;
+  font-size: 2.8vw;
 }
 .weather__left h3 {
   font-size: 4vw;
+}
+.weather__left p {
+  font-size: 2.8vw;
 }
 .weather__indicators {
   flex: 1 1 auto;
@@ -250,6 +255,39 @@
   color: #fff;
 }
 .weather_svg {
-  width: 7vw;
+  width: 6.5vw;
   height: auto;
+}
+.daily__screen{
+  padding:  0 30px;
+}
+.weather__daily__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background: red; */
+  height: 100%;
+}
+.weather__items {
+  margin: 20px 0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: var(--borderrad);
+  background-color: blueviolet;
+  background: rgba(40, 103, 214, 0.46);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border: 1px solid rgba(40, 103, 214, 0.26);
+  box-shadow:0px 0px 10px rgba(0, 0, 0, .6);
+  color:#fff;
+}
+.weather_desc_right {
+  display: flex;
+  align-items: center;
+}
+.weather__items p {
+  font-size: 1.9vw;
 }
